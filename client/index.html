@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/83715fa62b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="addPatient.html">Add Patient</a>
+    </div>
+    <nav class="navBar">
+        <span id="nav-icon" onclick="openNav()">&#9776;
+        </span>
+    </nav>
+
+    <div class="container">
+        <!-- <div class="patient-card">
+            <div class="edit">
+                <span id="icon"><i class="fas fa-edit"></i></span>
+                <span id="edit">Edit</span>
+            </div>
+            <div class="card-content" id="card-press">
+                <div class="card-img">
+                    <img id="patient-img" src="" alt="">
+                </div>
+                <div class="patient-info">
+                    <div class="patient-name">
+                        <span id="fname">Nicholas</span>
+                        <span id="lname">Deane</span><br>
+                    </div>
+                    <div class="patient-position">
+                        <span id="position">Standing</span>
+                    </div>
+                </div>
+            </div>
+            <div class="delete">
+                <span id="icon"><i class="far fa-trash-alt"></i></span>
+                <span id="delete">Delete</span>
+            </div>
+        </div> -->
+    </div>
+
+    <div class="form-popup" id="edit-form">
+        <h1>Patient Form</h1>
+        <form class="form-container">
+            <div class="form-data">
+                <label for="patient-fname"></label><br>
+                <input type="text" name="patient-fname" id="patient-fname" placeholder="First Name"><br>
+            </div>
+
+            <div class="form-data">
+                <label for="patient-lname"></label><br>
+                <input type="text" name="patient-lname" id="patient-lname" placeholder="Last Name"><br>
+            </div>
+
+            <div class="form-data">
+                <label for="patient-age"></label><br>
+                <input type="number" name="patient-age" id="patient-age" placeholder="Age" ><br>
+            </div>
+
+            <div class="form-data">
+                <label for="patient-id"></label><br>
+                <input type="text" name="patient-id" id="patient-id" placeholder="Patient ID" ><br><br>
+            </div>
+
+            <div class="form-button">
+                <input type="submit" value="Submit" id="submit-patient" >
+            </div>
+            <div class="form-button">
+                <input type="submit" value="Close" id="close-form" onclick="closeForm()">
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="script.js" ></script>
+</body>
+</html>

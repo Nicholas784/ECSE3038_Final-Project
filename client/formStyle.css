@@ -1,0 +1,113 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+.container{
+    height:100%;
+    background-color: #262626;
+    padding-top: 10%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.patient-form{
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: white;
+}
+
+input[type=text] {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=number] {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+
+input[type=submit] {
+    border: none;
+    border-radius: 5px;
+    outline: 0;
+    display: inline-block;
+    padding: 12px;
+    width: 20%;
+    background-color: #00BFFF;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5vw;
+    color: #FFFFFF;
+    resize: vertical;
+    overflow: visible;
+}
+
+input[type=submit]:hover {
+    background-color: #00bfffbb;
+}
+
+.navBar{
+    background-color: #0E0E0E;
+}
+
+#nav-icon{
+    font-size:30px;
+    cursor:pointer;
+    color: white;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(216, 213, 213);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
