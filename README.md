@@ -71,6 +71,8 @@ The frontend should consist of the following:
 
 There should be a BACK button that, when clicked, returns the user to the patient grid view.
 
+### **NOTE: This project is still currently incomplete.**
+
 
 
 
